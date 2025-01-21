@@ -22,7 +22,6 @@
     </div>
 
     <div id="mainLoginDiv">
-      
         <form action="/submit" method="post" id="loginForm">
             <input type="email" name="email" id="emailInputLogin" placeholder="Email" class="inputFields">
             <input type="password" name="password" id="passInputLogin" placeholder="Password" class="inputFields">
@@ -33,6 +32,14 @@
     <div id="signUpDiv">
         <p id="newUserText">New User? <a href="/signup">Sign Up</a> </p>
     </div>
+
+    <%if(account_exist == false){%>
+      <p class="notExistText">Account does not exist</p>
+    <%} else if(right_pass == false) {%>
+      <p class="notExistText">Incorrect Password</p>
+      <%}%>
     
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/script.js"></script>
   </body>
 </html>

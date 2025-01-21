@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+const { createServer } = require('node:http');
+const { Server } = require("socket.io");
+const server = createServer(app);
+const io = new Server(server);
 
 const path = require('path');
 const cookieParser = require('cookie-parser');
@@ -15,8 +19,17 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 
+
+io.on('connection', (socket) => {
+    console.log('a user connected');
+    socket.on('disconnect', () => {
+        console.log('user disconnected');
+      });
+});
+
+
 app.get('/', (req, res) => {
-     res.render('index')
+     res.render('index', {account_exist : true, right_pass : true});
 })
 
 app.get('/signup', (req, res) => {
@@ -62,17 +75,26 @@ app.post('/submit', async (req, res) => {
         }
         else {
             console.log('incorrect password');
-            res.redirect('/');
+            res.redirect('/login/wrong_pass');
         }
         
     }
     else {
         console.log('Account does not exist');
-        res.redirect('/');
+        res.redirect('/login/account_not_exist');
     }
 
 })
 
-app.listen(3000, () => {
+
+app.get('/login/account_not_exist', (req, res) => {
+    res.render('index', {account_exist : false, right_pass: true});
+})
+
+app.get('/login/wrong_pass', (req, res) => {
+    res.render('index', {account_exist : true, right_pass: false});
+})
+
+server.listen(3000, () => {
     console.log('App is Listening on PORT 3000');
 })
