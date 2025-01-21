@@ -1,0 +1,28 @@
+{
+  "name": "loginsystem_web_v1",
+  "version": "1.0.0",
+  "description": "Login and Sign Up System using NodeJs, ExpressJs, MongoDB and EJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devansh-bajpai/loginSystem_web_v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/devansh-bajpai/loginSystem_web_v1/issues"
+  },
+  "homepage": "https://github.com/devansh-bajpai/loginSystem_web_v1#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/images/padlockLogo.png" />
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="headerDiv">
+      <img src="/images/userLogo.png" alt="logo" id="headerUserLogo" />
+      <h1 id="headerText">Login</h1>
+    </div>
+
+    <div id="mainLoginDiv">
+      
+        <form action="/submit" method="post" id="loginForm">
+            <input type="email" name="email" id="emailInputLogin" placeholder="Email" class="inputFields">
+            <input type="password" name="password" id="passInputLogin" placeholder="Password" class="inputFields">
+            <input type="submit" value="Login" id="submitButtonLogin">
+        </form>
+    </div>
+
+    <div id="signUpDiv">
+        <p id="newUserText">New User? <a href="/signup">Sign Up</a> </p>
+    </div>
+    
+  </body>
+</html>

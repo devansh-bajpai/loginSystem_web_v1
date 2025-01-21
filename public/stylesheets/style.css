@@ -1,0 +1,132 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #FFCCE1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#headerDiv {
+    height: 200px;
+    width: 800px;
+    
+    background-color: #db97ab8e;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#headerUserLogo {
+    height: 100px;
+    width: 100px;
+}
+
+#headerText {
+    font-family: 'Exo 2';
+    font-size: 50px;
+    color: #F2F9FF;
+    /* color: #FFF5D7; */
+}
+
+
+#mainLoginDiv {
+    height: 200px;
+    width: 800px;
+    background-color: #db97ab8e;
+    /* background-color: green; */
+
+    /* border-radius: 0px 0px 10px 10px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 700px;
+    /* background-color: blue; */
+
+    
+}
+
+/* #emailInputLogin {
+    height: 40px;
+    width: 600px; 
+}
+
+
+#passInputLogin {
+    height: 40px;
+    width: 600px;
+} */
+
+
+.inputFields {
+    height: 40px;
+    width: 600px;
+    padding: 10px;
+    margin: 5px;
+    outline: none;
+    border-radius: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+
+    border: 0px;
+}
+
+#submitButtonLogin {
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    outline: none;
+    border: 0px;
+}
+
+#submitButtonSignUp{
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    outline: none;
+    border: 0px;
+}
+
+#signUpDiv {
+    background-color: #db97ab8e;
+    height: 60px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+#newUserText {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
