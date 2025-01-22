@@ -34,6 +34,14 @@
     <div id="signUpDiv">
         <p id="alreadyUserText">Already a User? <a href="/">Login</a> </p>
     </div>
+
+    <%if(already_exists == true){%>
+      <p class="notExistText">Account Already Exists!</p>
+    <%} else if(passLen_error == true) {%>
+      <p class="notExistText">Password must be atleast 8 characters</p>
+      <%} else if(notconfirm_pass == true){%>
+        <p class="notExistText">Passwords do not match</p>
+        <%}%>
     
   </body>
 </html>

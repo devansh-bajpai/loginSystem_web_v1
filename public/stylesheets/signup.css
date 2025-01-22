@@ -134,3 +134,10 @@ body {
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.notExistText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin-top: 8px;
+    color: rgb(255, 0, 0);
+}

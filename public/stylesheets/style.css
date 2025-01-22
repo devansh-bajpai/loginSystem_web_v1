@@ -137,3 +137,10 @@ body {
     margin-top: 8px;
     color: rgb(255, 0, 0);
 }
+
+.accCreatedText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    margin-top: 8px;
+    color: rgb(43, 133, 47);
+}

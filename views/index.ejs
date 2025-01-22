@@ -37,7 +37,9 @@
       <p class="notExistText">Account does not exist</p>
     <%} else if(right_pass == false) {%>
       <p class="notExistText">Incorrect Password</p>
-      <%}%>
+      <%} else if(signupSuccess == true){%>
+        <p class="accCreatedText">Account Created Successfully!</p>
+        <%}%>
     
     <script src="/socket.io/socket.io.js"></script>
     <script src="/javascripts/script.js"></script>
