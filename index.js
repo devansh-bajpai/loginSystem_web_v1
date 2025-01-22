@@ -29,7 +29,10 @@ io.on('connection', (socket) => {
 
 
 app.get('/', (req, res) => {
+
+    
      res.render('index', {account_exist : true, right_pass : true, signupSuccess: false});
+    //  console.log(req.cookies);
 })
 
 app.get('/signup', (req, res) => {
@@ -122,6 +125,7 @@ app.get('/signup/:routename', (req, res) => {
     // res.render('signup', {passLen_error: true, passConfirm: false})
     if (req.params.routename == "already_exists") {
         res.render('signup', {already_exists: true, passLen_error: null, notconfirm_pass: null});
+        
     }
     else if (req.params.routename == "passLen_error"){
         res.render('signup', {already_exists: null, passLen_error: true, notconfirm_pass: null});
